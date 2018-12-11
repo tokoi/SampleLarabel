@@ -1,19 +1,52 @@
-@extends('layouts.app') 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
 
-@section('content') 
+    <title>| Ruby on Rails Tutorial Sample App</title>
+    
+    {{csrf_field()}}
+    
+        
 
-<div class="center jumbotron"> 
-<h1>Welcome to the Sample App</h1>
+<!-- CSS と JavaScript --> 
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
-  <h2>
-    This is the home page for the
-    <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
+
+
+
+</head>
+<body>
+    
+    <header class="navbar navbar-fixed-top navbar-inverse">
+        
+        <div class="container">
+            
+            <a href="https://railstutorial.jp/">sample app</a>
+             <div class="container">
+                 <nav>
+                     <ul class="nav navbar-nav navbar-right">
+                 <li><a href="https://railstutorial.jp/">home</a></li>
+                  <li><a href="https://railstutorial.jp/">help</a></li>
+                  <li><a href="https://railstutorial.jp/">login</a></li>
+                     </ul>
+                 </nav>
+                 
+             </div>
+            
+            
+            
+            @yield('content') 
+            
+        </div>
+        
+        
+        
+        
+    </header>
   
- <a href='https://phptutorial-tokoix.c9users.io/signup'><button class="btn btn-default">sign up</button></a>
-  
-  <!--<p><a href='http://rubyonrails.org'><img src="/mypage/resources/picture/btn027_05.gif" alt=""></a></p>-->
-
-@endsection
+</body>
+</html>
