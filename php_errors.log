@@ -7,3 +7,4 @@
 [10-Dec-2018 14:53:05 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/SampleLarabel/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/SampleLarabel/public/index.php on line 24
 [10-Dec-2018 14:55:04 UTC] PHP Warning:  require(/home/ubuntu/workspace/SampleLarabel/public/../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/SampleLarabel/public/index.php on line 24
 [10-Dec-2018 14:55:04 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/SampleLarabel/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/SampleLarabel/public/index.php on line 24
+[28-Dec-2018 07:23:04 UTC] PHP Fatal error:  Cannot use Illuminate\Http\Request as Request because the name is already in use in /home/ubuntu/workspace/SampleLarabel/app/Http/Controllers/UserController.php on line 9

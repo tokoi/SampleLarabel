@@ -20,11 +20,27 @@
 名前→{{ \Auth::user()->name }}
 
 <br>
-<br>
-<br>
-<a href="/auth/logout">ログアウト</a>
+
+<a href='/auth/reset'>forgot password!</a>
 
 
+
+
+ <form action="{{ url('edit/'.\Auth::user()->id)}}" method="POST"> 
+{{csrf_field()}} 
+<button type="submit" class="btn btn-primary">
+  <?php
+
+$id = \Auth::user()->id;
+
+var_dump($id);
+
+?>
+<input type="hidden" name="id" value="{{ $id }}"> 
+
+
+<i class="glyphicon glyphicon-pencil"></i> 更新 </button> 
+</form> </td>
 
   @else
   <h1>Welcome to the Sample App</h1>
@@ -38,7 +54,7 @@
   <br>
   <br>
   <a href="/auth/register"><button class="btn btn-default">Sign up!!</button></a>
-  <a href='/auth/login'><button class="btn btn-default">Log in</button></a>
+  <a href="/auth/login"><button class="btn btn-default">Log in</button></a>
     
   
   @endif
